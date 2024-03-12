@@ -86,7 +86,7 @@ const Navbar = ({ handleOrderPopup }) => {
     alertMessage('red','Invalid book type.')
     
   }else{
-      fetch(`http://192.168.1.3:4800/addBooks?id=${id}&imgUrl=${imgUrl}&title=${title}&description=${description}&author=${author}&price=${price}&rating=${rating}&type=${type}`, {
+      fetch(`http://aad5225e6faf8463ab9c63978b8eadf1-1417549700.ap-south-1.elb.amazonaws.com:4800/addBooks?id=${id}&imgUrl=${imgUrl}&title=${title}&description=${description}&author=${author}&price=${price}&rating=${rating}&type=${type}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
